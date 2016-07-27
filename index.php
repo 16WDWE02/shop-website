@@ -115,7 +115,7 @@ $controller->buildHTML();
 // buildHTML() is the last function to run. index.php is finished here so you'll want to take
 // a look at the buildHTML() function of the page that is being built.
 // This usually just involves picking a template to load and sending it all the data we've gathered from
-// the constructor that ran before. The constructor typically triggers a series of other function too,
+// the constructor that ran before. The constructor typically triggers a series of other functions too,
 // so A LOT happens when the constructor is run.
 
 
