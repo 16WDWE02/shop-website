@@ -27,9 +27,6 @@ session_start();
 // ideally at the very beginning:
 require 'vendor/autoload.php';
 
-// Skipping the login system, we'll pretend we're logged in as user 1
-$_SESSION['id'] = 1;
-
 // Later on in this code we pick a Page Controller to use.
 // These controllers have common functionality (like how all animals communicate, eat, sleep etc)
 // and we have a "PageController.php" file that defines all these common functions.
@@ -38,6 +35,9 @@ $_SESSION['id'] = 1;
 // all DEPEND on the functionality of the PageController, we MUST include the PageController
 // BEFORE we attempt to use an individual page controller.
 require 'app/controllers/PageController.php';
+
+// Skipping the login system, we'll pretend we're logged in as user 1
+$_SESSION['id'] = 1;
 
 // A cart should exist for every visitor, even if they don't use it.
 // BUT WAIT! We don't want to clear the cart every time they view a new page,
