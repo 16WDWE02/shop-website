@@ -9,6 +9,6 @@ These have been downloaded via composer, so if you download this project onto yo
 
 ## Database provided
 
-As I continue to build up this project I will replace the `my_online_shop_database.sql` file. All you need to do is create a database in phpMyAdmin and import this SQL file.
+As I continue to build up this project I will replace the `my_online_shop_database.sql` file. All you need to do is create a database of the same name (minus the .sql part) in phpMyAdmin and import this SQL file.
 
 This saves you from having to create data.
