@@ -22,7 +22,7 @@
 session_start();
 
 // We use third party code in this project (Plates), and it's downloaded with composer.
-// Composer can automatically require "autoload" all of the third party code that we use.
+// Composer can automatically require (autoload) all of the third party code that we use.
 // Whenever you use composer, you'll have to have this line of code somewhere in your project,
 // ideally at the very beginning:
 require 'vendor/autoload.php';
