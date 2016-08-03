@@ -81,17 +81,20 @@ switch( $page ) {
 
   // Shop page!
   case 'shop':
-
+    require 'app/controllers/ShopController.php';
+    $controller = new ShopController();
   break;
 
   // Cart page!
   case 'cart':
-
+    require 'app/controllers/CartController.php';
+    $controller = new CartController();
   break;
 
   // Checkout page!
   case 'checkout':
-
+    require 'app/controllers/CheckoutController.php';
+    $controller = new CheckoutController();  
   break;
 
   // Wait, what page? Sorry, I don't know this one... 404 (not found)
