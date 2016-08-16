@@ -33,7 +33,17 @@
 <?php else: ?>
 
   <p>
-    There are no products for sale at the moment.
+    Can't find any products on this page.
   </p>
 
 <?php endif; ?>
+
+<ul>
+  <?php for($i=1; $i<=$totalPages; $i++): ?>
+  <li>
+    <a href="index.php?page=shop&pagination=<?= $i ?>">
+      Page <?= $i ?>
+    </a>
+  </li>
+  <?php endfor; ?>
+</ul>
